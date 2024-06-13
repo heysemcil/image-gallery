@@ -1,0 +1,37 @@
+@import '../../scss/mixins';
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  
+
+  .card {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+   
+  }
+
+  .img-wrapper {
+    overflow: hidden;
+  }
+  img {
+    width: 350px;
+    height: 500px;
+    object-fit: cover;
+    &:hover {
+        transform: scale(1.2);
+        transition: all ease-in-out 0.5s;
+      }
+  }
+  .photographer{
+    text-align: center;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.183);
+  }
+}
